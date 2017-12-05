@@ -1,4 +1,6 @@
 <?php
+// You need PHP 5+ for this cache to work
+// It modifies the page headers to cache the page
 header('Content-Type: text/cache-manifest');
 $filesToCache = array(
     './index.html', 
