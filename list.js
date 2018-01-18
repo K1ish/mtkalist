@@ -84,7 +84,7 @@ $$('.todo-items-list').on('delete', '.swipeout', function () {
         localStorage.td7Data = JSON.stringify(todoData);
     }
 });
-
+// "Update" the web app.
 // Update app when manifest updated 
 // http://www.html5rocks.com/en/tutorials/appcache/beginner/
 // Check if a new cache is available on page load.
@@ -92,7 +92,7 @@ window.addEventListener('load', function (e) {
     window.applicationCache.addEventListener('updateready', function (e) {
         if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
             // Browser downloaded a new app cache.
-            myApp.confirm('A new version of ToDo7 is available. Do you want to load it right now?', function () {
+            myApp.confirm('A new update has been released for MTKALIST, Update now?', function () {
                 window.location.reload();
             });
         } else {
